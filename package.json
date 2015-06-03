@@ -20,5 +20,7 @@
 	,"dependencies": {
 		"mime":"*"
 		,"socket.io":"*"
-	},"private":"true"
+		,"deskshell2-win":"*"
+	}
+	,"private":"true"
 }
