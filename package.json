@@ -1,0 +1,24 @@
+{
+	"name": "deskshell-hello-world"
+	,"author":"sihorton"
+	,"main":"server.js"
+	
+	,"plugins":[
+		{"name":"httpHandler"
+			,"htdocs":"htdocs"
+			,"defaultIndex":"index.htm"
+			,"subs":[
+				{"name":"httpDefaultHandler"}
+		]}
+		,{"name":"socketApi"}
+		,{"name":"socketServer"
+			,"port":80
+			,"httpHandler":"httpHandler"
+		}
+	]
+	
+	,"dependencies": {
+		"mime":"*"
+		,"socket.io":"*"
+	},"private":"true"
+}
